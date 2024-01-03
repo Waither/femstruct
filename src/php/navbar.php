@@ -15,48 +15,30 @@
 
                 <!-- Logo -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img src="/src/images/logo/MagdalenaZŚrodkiem.png" height="50" alt="Logo" loading="lazy">
+                    <img src="" height="50" alt="Logo" loading="lazy">
                 </a>
 
                 <!-- Index -->
                 <li class="nav-item my-auto mx-2">
-                    <a class="nav-link" href="#"></a>
+                    <a class="nav-link" href="#">123</a>
                 </li>
 
-                <!-- History -->
-                <li class="nav-item my-auto mx-2 dropdown">
+                <!-- <li class="nav-item my-auto mx-2 dropdown">
                     <a id="navbarDropdown1" class="nav-link dropdown-toggle" data-mdb-dropdown-init aria-expanded="false" role="button"></a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-
-                        <!-- History of the oil industry -->
                         <li><a class="dropdown-item" href="#"></a></li>
-
-                        <!-- History of the Magdalena mine -->
                         <li><a class="dropdown-item" href="#"></a></li>
                     </ul>
-                </li>
-
-                <!-- Sightseeing -->
-                <li class="nav-item my-auto mx-2 dropdown">
-                    <a id="navbarDropdown2" class="nav-link dropdown-toggle" data-mdb-dropdown-init aria-expanded="false" role="button"></a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-
-                        <!-- Opening hours -->
-                        <li><a class="dropdown-item" href="#"></a></li>
-
-                        <!-- Tickets -->
-                        <li><a class="dropdown-item" href="#"></a></li>
-                    </ul>
-                </li>
+                </li> -->
 
                 <!-- Gallery -->
                 <li class="nav-item my-auto mx-2">
-                    <a class="nav-link" href="#"></a>
+                    <a class="nav-link" href="#">123</a>
                 </li>
 
                 <!-- Contact -->
                 <li class="nav-item my-auto mx-2">
-                    <a class="nav-link" href="#"></a>
+                    <a class="nav-link" href="#">123</a>
                 </li>
             </ul>
 
@@ -84,17 +66,19 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                         <!-- Selected language -->
-                        <li><a class="dropdown-item" href="#"><i class="flag-<?php echo $availableLanguages[$lang][1]; ?> flag"></i><?php echo $availableLanguages[$lang][2]; ?><i class="fa fa-check text-success ms-2"></i></a></li>
-                        <li><hr class="dropdown-divider" /></li>
-
-                        <!-- Optional language -->
                         <?php
-                            foreach($availableLanguages as $lg) {
-                                if ($lg[0] != $lang) {
-                                    ?>
-                                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('<?php echo $lg[0]; ?>')"><i class="flag-<?php echo $lg[1]; ?> flag"></i><?php echo $lg[2]; ?></a></li>
-                                    <?php
-                                }
+                            foreach ($availableLanguages as $lg) {
+                                ?>
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="changeLanguage('<?php echo $lg[0]; ?>')">
+                                            <i class="flag-<?php echo $lg[1]; ?> flag"></i>
+                                            <?php
+                                                echo $lg[2];
+                                                if ($lg[0] == $lang) { echo '<i class="fa fa-check text-success ms-2"></i>'; } 
+                                            ?>
+                                        </a>
+                                    </li>
+                                <?php
                             }
                         ?>
                     </ul>
