@@ -4,5 +4,6 @@
 
         // Navbar
         "name" => "FemSTRUCT",
+        "home" => "Strona główna"
     )
 ?>

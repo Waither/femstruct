@@ -1,3 +1,6 @@
+<?php
+    //require_once('/cookieManagment.php');
+?>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
     <div class="container-fluid">
@@ -15,12 +18,12 @@
 
                 <!-- Logo -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img src="" height="50" alt="Logo" loading="lazy">
+                    <img src="/" height="50" alt="Logo" loading="lazy">
                 </a>
 
                 <!-- Index -->
                 <li class="nav-item my-auto mx-2">
-                    <a class="nav-link" href="#">123</a>
+                    <a class="nav-link" href="#"><?php $language["home"]; ?></a>
                 </li>
 
                 <!-- <li class="nav-item my-auto mx-2 dropdown">
@@ -56,7 +59,7 @@
 
                 <?php
                     // Get available languages
-                    include_once('src/php/languages/all.php');
+                    include_once($_SERVER['DOCUMENT_ROOT'].'/src/php/languages/all.php');
                     $lang = $language['langType'];
                 ?>
 

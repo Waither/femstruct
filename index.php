@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ .'/cookieManagment.php');
+	require_once $_SERVER['DOCUMENT_ROOT'].'/cookieManagment.php';
 ?>
 <!DOCTYPE html>
 <html lang="pl">
