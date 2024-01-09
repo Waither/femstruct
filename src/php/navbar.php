@@ -1,6 +1,8 @@
 <?php
-    //require_once('/cookieManagment.php');
+    // Get cookie data
+	require_once $_SERVER['DOCUMENT_ROOT'].'/src/php/getCookie.php'
 ?>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
     <div class="container-fluid">
@@ -18,12 +20,12 @@
 
                 <!-- Logo -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img src="/" height="50" alt="Logo" loading="lazy">
+                    <img src="/src/images/logo/logo.png" height="50" alt="Logo">
                 </a>
 
                 <!-- Index -->
                 <li class="nav-item my-auto mx-2">
-                    <a class="nav-link" href="#"><?php $language["home"]; ?></a>
+                    <a class="nav-link" href="/"><?php echo $language["home"]; ?></a>
                 </li>
 
                 <!-- <li class="nav-item my-auto mx-2 dropdown">
@@ -33,15 +35,25 @@
                         <li><a class="dropdown-item" href="#"></a></li>
                     </ul>
                 </li> -->
+                
+                <!-- Offer -->
+                <li class="nav-item my-auto mx-2">
+                    <a class="nav-link" href="#" onclick="window.location.replace('/offer')"><?php echo $language["offer"]; ?></a>
+                </li>
+
+                <!-- About -->
+                <li class="nav-item my-auto mx-2">
+                    <a class="nav-link" href="/about"><?php echo $language["about"]; ?></a>
+                </li>
 
                 <!-- Gallery -->
                 <li class="nav-item my-auto mx-2">
-                    <a class="nav-link" href="#">123</a>
+                    <a class="nav-link" href="/gallery"><?php echo $language["gallery"]; ?></a>
                 </li>
 
-                <!-- Contact -->
-                <li class="nav-item my-auto mx-2">
-                    <a class="nav-link" href="#">123</a>
+                 <!-- Contact -->
+                 <li class="nav-item my-auto mx-2">
+                    <a class="nav-link" href="/contact"><?php echo $language["contact"]; ?></a>
                 </li>
             </ul>
 
@@ -67,20 +79,18 @@
                 <li class="nav-item mx-2 dropdown">
                     <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false"><i id="selected-lang-flag" class="flag-<?php echo $availableLanguages[$lang][1]; ?> flag m-0"></i></a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                        <!-- Selected language -->
                         <?php
                             foreach ($availableLanguages as $lg) {
                                 ?>
-                                    <li>
-                                        <a class="dropdown-item" href="#" onclick="changeLanguage('<?php echo $lg[0]; ?>')">
-                                            <i class="flag-<?php echo $lg[1]; ?> flag"></i>
-                                            <?php
-                                                echo $lg[2];
-                                                if ($lg[0] == $lang) { echo '<i class="fa fa-check text-success ms-2"></i>'; } 
-                                            ?>
-                                        </a>
-                                    </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" onclick="changeLanguage('<?php echo $lg[0]; ?>')">
+                                        <i class="flag-<?php echo $lg[1]; ?> flag"></i>
+                                        <?php
+                                            echo $lg[2];
+                                            if ($lg[0] == $lang) { echo '<i class="fa fa-check text-success ms-2"></i>'; } 
+                                        ?>
+                                    </a>
+                                </li>
                                 <?php
                             }
                         ?>

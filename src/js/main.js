@@ -1,10 +1,6 @@
 // Main JS file
 
-// Hide navbar
-function hideNavbar() {
-    $('.navbar-collapse').collapse('hide');
-}
-
+// Set cookie
 function setCookie(name, value) {
     $.ajax({
         url: 'src/php/setCookie.php',

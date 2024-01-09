@@ -18,7 +18,7 @@
 
 	<!-- Main div -->
 	<div id="main" class="mb-2">
-		
+		OFERTA
 	</div>
 
 	<!-- Load footer -->
