@@ -6,6 +6,8 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+	<!-- Title -->
+	<title><?php echo $language["name"]; ?></title>
     <?php
         // Load head
         require_once $_SERVER['DOCUMENT_ROOT'].'/src/php/head.php';

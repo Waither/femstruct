@@ -19,8 +19,8 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <!-- Logo -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img src="/src/images/logo/logo.png" height="50" alt="Logo">
+                <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                    <img src="/src/images/logo/logo<?php if (isset($_COOKIE['MDBstyle']) && $_COOKIE['MDBstyle'] == 'dark') {echo "White"; } else { echo "Black"; } ?>.svg" height="60" alt="Logo">
                 </a>
 
                 <!-- Index -->
@@ -47,9 +47,9 @@
                 </li>
 
                 <!-- Gallery -->
-                <li class="nav-item my-auto mx-2">
-                    <a class="nav-link" href="/gallery"><?php echo $language["gallery"]; ?></a>
-                </li>
+                <!-- <li class="nav-item my-auto mx-2">
+                    <a class="nav-link" href="/gallery"><?php // echo $language["gallery"]; ?></a>
+                </li> -->
 
                  <!-- Contact -->
                  <li class="nav-item my-auto mx-2">

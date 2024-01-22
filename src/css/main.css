@@ -8,11 +8,12 @@
 /* Selector */
 body {
     font-family: Lato-Regular;
+    overflow-x: hidden;
 }
 
 /* Id */
 #blankUnderNav {
-    height: 76.6px;
+    height: 96px;
 }
 
 /* Class */

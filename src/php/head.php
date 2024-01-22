@@ -2,11 +2,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Maciej Gąsior">
-<meta name="description" content="FEMSTRUCT">
+<meta name="description" content="Strona firmy konstrukcyjnej FEMstruct Marcin Grądalski. Firma oferuje opracowanie zaawansowanych projektów konstrukcyjnych, ekspertyz i ocen technicznych budynków oraz doradztwo techniczne dla konstruktorów.">
+<meta name="keyword" content="FEMstruct, Marcin Grądalski, konstrukcje szkieletowe">
 
-<!-- Title & icon -->
-<title><?php echo $language["name"]; ?></title>
-<link rel="icon" href="/src/images/logo/logo.png">
+<!-- Icon -->
+<link rel="icon" href="/src/images/logo/icon.svg" sizes="32x32" type="image/svg+xml">
 
 <!-- CSS files -->
 <link type="text/css" rel="stylesheet" href="/src/css/fontawesome.min.css">
