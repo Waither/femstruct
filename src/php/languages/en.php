@@ -22,7 +22,7 @@
             "Wykonywanie obliczeń statyczno wytrzymałościowych dla innych biur konstrukcyjnych."
         ],
         "offerWhatText" => "Obliczenia MES w <b>FEMstruct</b> wykonywane są w programie SCIA Engineer 22, który jest bardzo zaawansowanym narzędziem. W połączeniu zgruntowną znajomością zasad mechaniki budowli, wytrzymałości materiałów oraz pokrewnych dziedzin pozwala on w zrównoważony, maksymalnie dokładny i jednocześnie bezpieczny sposób przewidzieć realną pracę konstrukcji przy oszczędności czasu poświęconego na optymalizację.",
-        "offerProjects" => "Our projects",
+        "offerProjects" => "Selected projects from my portfolio",
         
         // About
         "aboutFirmMain" => "FEMstruct Construction Office was founded in 2024. as a continuation and next natural step in the development of my professional career as a building structure designer.",

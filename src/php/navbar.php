@@ -4,7 +4,7 @@
 ?>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" <?php if (isset($_COOKIE['MDBstyle']) && $_COOKIE['MDBstyle'] == 'light') { echo 'style="background-color: #eee !important;"';} ?>>
     <div class="container-fluid">
 
         <!-- Toggle button -->
