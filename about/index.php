@@ -55,9 +55,9 @@
 				</div>
 
 				<!-- Image 1 -->
-				<div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-					<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
-						<img src="/src/images/about/z1.jpg" class="w-100 rounded" alt="ZDJ1">
+				<div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center align-items-center">
+					<div style="max-height: 400px; max-width: 400px;" class="bg-image hover-overlay shadow-3-strong rounded-circle" data-mdb-ripple-init data-mdb-ripple-color="#f89404">
+						<img style="max-height: 400px; max-width: 400px;" src="/src/images/about/z1.jpg" class="w-100 rounded-circle" alt="ZDJ1">
 						<a href="#!">
 							<div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
 						</a>
@@ -69,10 +69,10 @@
 			<div class="row gx-lg-5">
 
 				<!-- Images 2 -->
-				<div class="col-lg-6 col-md-12 mt-3 d-flex flex-column justify-content-center">
-					<div class="row">
+				<div class="col-lg-6 col-md-12 mt-3 d-flex flex-column justify-content-center align-items-center">
+					<div class="row align-items-center">
 						<div class="col-xxl-6 col-lg-12 col-md-6 mb-2">
-							<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
+							<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="#f89404">
 								<img src="/src/images/about/z2-1.png" class="w-100 rounded" alt="ZDJ2">
 								<a href="#!">
 									<div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
@@ -80,7 +80,7 @@
 							</div>
 						</div>
 						<div class="col-xxl-6 col-lg-12 col-md-6 mb-2">
-							<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
+							<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="#f89404">
 								<img src="/src/images/about/z2-2.png" class="w-100 rounded" alt="ZDJ2">
 								<a href="#!">
 									<div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
@@ -95,42 +95,9 @@
 					<p style="text-align: justify;"><?php echo $language["contactFirmText2"]; ?></p>
 				</div>
 			</div>
-
-			<hr class="hr hr-blurry my-5">
-
-			<!-- What we doing -->
-			<div class="row gx-lg-5 mt-3">
-
-				<!-- Text 3 -->
-				<div class="col-lg-6 col-md-12">
-					<h2 class="text-center fw-bold"><?php echo $language["aboutWhatWe"]; ?></h2>
-					<p class="mb-2"><?php echo $language["aboutWhatWeText"]; ?></p>
-					<ol class="list-group list-group-light mb-3">
-						<?php
-							foreach ($language["aboutWhatWeList"] as $text) {
-								?>
-								<li class="list-group-item<?php if (isset($_COOKIE['MDBstyle']) && $_COOKIE['MDBstyle'] == 'dark') { echo " text-light"; } ?>"><?php echo $text; ?></li>
-								<?php
-							}
-						?>
-					</ol>
-				</div>
-
-				<!-- Image 3 -->
-				<div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
-					<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="light">
-						<img src="/src/images/about/z3.png" class="w-100 rounded" alt="ZDJ3">
-						<a href="#!">
-							<div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<hr class="hr hr-blurry my-5">
-
-			<h2 class="text-center fw-bold"><?php echo $language["aboutPartners"]; ?></h2>
 		</section>
+
+		<h2 class="text-center fw-bold"><?php echo $language["aboutPartners"]; ?></h2>
 	</div>
 
 	<!-- Load footer -->

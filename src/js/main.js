@@ -3,7 +3,7 @@
 // Set cookie
 function setCookie(name, value) {
     $.ajax({
-        url: 'src/php/setCookie.php',
+        url: '/src/php/setCookie.php',
         type: 'POST',
         data: {
             name: name,

@@ -18,8 +18,15 @@
 			transition: 0.5s background-color;
 		}
 		.badge-primary:hover {
-			background-color: #dc4c64 !important;
+			background-color: #f89404 !important;
 			cursor: pointer;
+		}
+
+		.btn-primary {
+			transition: 0.5s background-color;
+		}
+		.btn-primary:hover {
+			background-color: #f89404 !important;
 		}
 	</style>
 </head>
@@ -127,7 +134,7 @@
 				<div class="col-12">
 					<div class="d-flex flex-column align-items-center justify-content-center mx-2 mb-2 shadow-4-strong rounded">
 						<div class="flex-shrink-0 mt-3">
-							<div class="p-3 badge-primary bg-danger rounded-4 d-flex align-items-center justify-content-center" style="width:80px;height:80px;" data-mdb-ripple-init data-mdb-ripple-color="light">
+							<div class="p-3 badge-primary bg-primary rounded-4 d-flex align-items-center justify-content-center" style="width:80px;height:80px;" data-mdb-ripple-init data-mdb-ripple-color="light">
 								<i class="fas fa-location-dot text-light fa-fw fa-3x"></i>
 							</div>
 						</div>

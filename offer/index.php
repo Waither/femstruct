@@ -36,7 +36,7 @@
 
 				<!-- Text 3 -->
 				<div class="col-lg-6 col-md-12">
-					<h2 class="text-center fw-bold"><?php echo $language["offerWaht"] ?></h2>
+					<h2 class="text-center fw-bold"><?php echo $language["offerWhat"] ?></h2>
 					<ol class="list-group list-group-light mb-3">
 						<?php
 							foreach ($language["offerWhatList"] as $text) {
@@ -53,7 +53,23 @@
 				<div class="col-lg-6 col-md-12 d-flex flex-column">
 					<h3 class="text-center fw-bold"><?php echo $language["offerProjects"] ?></h3>
 					<div class="row">
-						
+						<?php
+							$files = scandir($_SERVER['DOCUMENT_ROOT']."/src/images/offer/".$_COOKIE['language']);
+							foreach($files as $file) {
+								if (!in_array($file, array(".",".."))) {
+									?>
+									<div class="col-lg-6 col-md-12 mb-3 d-flex flex-column justify-content-center">
+										<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-popover-init data-mdb-trigger="hover" data-mdb-placement="top" data-mdb-content="<?php echo explode(".", $file)[0]; ?>" data-mdb-ripple-init data-mdb-ripple-color="#f89404">
+											<img src="/src/images/offer/<?php echo $_COOKIE['language']."/".$file; ?>" class="w-100 rounded">
+											<a href="#!">
+												<div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+											</a>
+										</div>
+									</div>
+									<?php
+								}
+							}
+						?>
 					</div>
 				</div>
 			</div>

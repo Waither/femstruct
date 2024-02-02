@@ -31,8 +31,7 @@
         "contactFirmText2" => "Jestem zwolennikiem nowoczesnego podejścia w projektowaniu z użyciem zaawansowanego, trójwymiarowego modelowania MES, a następnie wykonywania dokumentacji technicznej za pomocą zaawansowanego oprogramowania do modelowania i tworzenia dokumentacji inżynierskiej. Lata doświadczenia pokazały, że w dzisiejszych czasach jedynie takie podejście ma finansowe uzasadnienie. Dzięki takiemu podejściu do obliczeń konstrukcji jestem ją w stanie zaprojektować w sposób oszczędny i jednocześnie bezpieczny, przy zachowaniu wszystkich normowych obostrzeń. Metoda ta jest bardziej pracochłonna niż konserwatywne podejście do projektowania i wymaga dużo więcej doświadczenia, aby poprawnie odwzorować pracę obiektu, jednak za jej pomocą można bardzo dokładnie odwzorować przewidywaną pracę konstrukcji. Zastosowanie takiego podejścia potrafi niewspółmiernie obniżyć koszty inwestycji poprzez oszczędność na materiale oraz wykonanie dokładniejszej dokumentacji wykonawczej z mniejszą ilością błędów przy jednoczesnym zachowaniu bezpieczeństwa projektowanego obiektu.",
         "aboutPartners" => "Partnerzy",
 
-
-        //Contact
+        // Contact
         "contactUs" => "Skontaktuj się z nami!",
         "writeUs" => "Napisz do Nas",
         "phoneUs" => "Zadzwoń do Nas",

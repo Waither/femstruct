@@ -16,9 +16,9 @@
 
         <!-- Right -->
         <div>
-            <a class="btn btn-dark btn-floating m-1" style="background-color: #3b5998" href="#!" role="button" target="_blank" data-mdb-ripple-init data-mdb-popover-init data-mdb-trigger="hover" data-mdb-placement="top" data-mdb-content="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-dark btn-floating m-1" style="background-color: #55acee" href="#!" role="button" target="_blank" data-mdb-ripple-init data-mdb-popover-init data-mdb-trigger="hover" data-mdb-placement="top" data-mdb-content="Twitter / X"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-dark btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button" target="_blank" data-mdb-ripple-init data-mdb-popover-init data-mdb-trigger="hover" data-mdb-placement="top" data-mdb-content="Instagram"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-dark btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/profile.php?id=61555738357480" role="button" target="_blank" data-mdb-ripple-init data-mdb-popover-init data-mdb-trigger="hover" data-mdb-placement="top" data-mdb-content="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <!-- <a class="btn btn-dark btn-floating m-1" style="background-color: #55acee" href="#!" role="button" target="_blank" data-mdb-ripple-init data-mdb-popover-init data-mdb-trigger="hover" data-mdb-placement="top" data-mdb-content="Twitter / X"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-dark btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button" target="_blank" data-mdb-ripple-init data-mdb-popover-init data-mdb-trigger="hover" data-mdb-placement="top" data-mdb-content="Instagram"><i class="fab fa-instagram"></i></a> -->
         </div>
     </section>
 
