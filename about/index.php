@@ -73,7 +73,7 @@
 					<div class="row align-items-center">
 						<div class="col-xxl-6 col-lg-12 col-md-6 mb-2">
 							<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="#f89404">
-								<img src="/src/images/about/z2-1.png" class="w-100 rounded" alt="ZDJ2">
+								<img src="/src/images/about/z2-1.png" class="w-100 rounded" alt="ZDJ2-1">
 								<a href="#!">
 									<div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
 								</a>
@@ -81,7 +81,7 @@
 						</div>
 						<div class="col-xxl-6 col-lg-12 col-md-6 mb-2">
 							<div class="bg-image hover-overlay shadow-3-strong rounded" data-mdb-ripple-init data-mdb-ripple-color="#f89404">
-								<img src="/src/images/about/z2-2.png" class="w-100 rounded" alt="ZDJ2">
+								<img src="/src/images/about/z2-2.png" class="w-100 rounded" alt="ZDJ2-2">
 								<a href="#!">
 									<div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
 								</a>
@@ -97,7 +97,29 @@
 			</div>
 		</section>
 
-		<h2 class="text-center fw-bold"><?php echo $language["aboutPartners"]; ?></h2>
+		<h2 class="text-center fw-bold mb-3"><?php echo $language["aboutPartners"]; ?></h2>
+		<div class="row justify-content-center w-75 mx-auto">
+			<?php
+				$links = array(
+					"ARTICON" => "https://articon.pl/"
+				);
+				$files = scandir($_SERVER['DOCUMENT_ROOT']."/src/images/partners");
+				foreach($files as $file) {
+					if (!in_array($file, array(".",".."))) {
+						?>
+						<div class="col-lg-4 col-md-6 mb-3 d-flex flex-column justify-content-center p-3<?php if (isset($_COOKIE['MDBstyle']) && $_COOKIE['MDBstyle'] == 'dark') { echo " bg-light shadow-4-strong rounded"; } ?>" data-mdb-tooltip-init title="<?php echo explode(".", $file)[0]; ?>">
+							<div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="#f89404">
+								<img src="/src/images/partners/<?php echo $file; ?>" class="w-100 rounded">
+								<a href="<?php echo $links[explode(".", $file)[0]] ?>" target="_blank">
+									<div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+								</a>
+							</div>
+						</div>
+						<?php
+					}
+				}
+			?>
+		</div>
 	</div>
 
 	<!-- Load footer -->
