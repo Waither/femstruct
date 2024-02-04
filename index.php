@@ -19,13 +19,13 @@
 	<?php require_once $_SERVER['DOCUMENT_ROOT']."/src/php/navbar.php"; ?>
 
 	<!-- Main div -->
-	<div id="main">
+	<div id="main" style="margin-top: -7px;">
 
 		<!-- Carousel wrapper -->
 		<div id="carouselBasic" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init data-mdb-pause="false" data-mdb-interval="4000">
 
 			<!-- Indicators -->
-			<div class="carousel-indicators d-none" style="max-height: 830px;">
+			<div class="carousel-indicators d-none" style="height: calc(90vh - 90px);">
 				<?php
 					$files = scandir($_SERVER['DOCUMENT_ROOT']."/src/images/index");
 					for($i = 0; $i < count($files) - 2;) {
@@ -39,8 +39,7 @@
 			</div>
 
 			<!-- Inner -->
-			<div class="carousel-inner" style="max-height: 830px;">
-
+			<div class="carousel-inner" style="height: calc(100vh - 90px);">
 				<?php
 					$i = 0;
 					foreach($files as $file) {
