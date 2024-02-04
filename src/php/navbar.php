@@ -76,26 +76,27 @@
                 ?>
 
                 <!-- Language -->
-                <li class="nav-item mx-2 dropdown">
-                    <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false"><i id="selected-lang-flag" class="flag-<?php echo $availableLanguages[$lang][1]; ?> flag m-0"></i></a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- ODKOMENTOWAĆ JAK BĘDZIE WSZYSTKO -->
+                <!-- <li class="nav-item mx-2 dropdown">
+                    <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false"><i id="selected-lang-flag" class="flag-<?php // echo $availableLanguages[$lang][1]; ?> flag m-0"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
                         <?php
                             foreach ($availableLanguages as $lg) {
                                 ?>
-                                <li>
-                                    <a class="dropdown-item" href="#" onclick="changeLanguage('<?php echo $lg[0]; ?>')">
-                                        <i class="flag-<?php echo $lg[1]; ?> flag"></i>
+                                <!-- <li>
+                                    <a class="dropdown-item" href="#" onclick="changeLanguage('<?php // echo $lg[0]; ?>')">
+                                        <i class="flag-<?php // echo $lg[1]; ?> flag"></i>
                                         <?php
-                                            echo $lg[2];
-                                            if ($lg[0] == $lang) { echo '<i class="fa fa-check text-success ms-2"></i>'; } 
+                                            // echo $lg[2];
+                                            // if ($lg[0] == $lang) { echo '<i class="fa fa-check text-success ms-2"></i>'; } 
                                         ?>
                                     </a>
-                                </li>
+                                </li> -->
                                 <?php
                             }
                         ?>
-                    </ul>
-                </li>
+                    <!-- </ul>
+                </li> -->
             </div>
         </div>
     </div>

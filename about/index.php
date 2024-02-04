@@ -20,10 +20,17 @@
 			background-color: transparent !important;
 			padding: 0.5rem 0 !important;
 		}
-		@media only screen and (max-width: 974px) {
-			#mainText {
-				padding-left: 0.5rem !important;
-				padding-right: 0.5rem !important;
+		@media only screen and (max-width: 991px) {
+			#main {
+				padding-left: 5px !important;
+				padding-right: 5px !important;
+			}
+
+			#main > section {
+				padding-left: 10px !important;
+				padding-right: 10px !important;
+				margin-left: 10px !important;
+				margin-right: 10px !important;
 			}
 		}
 	</style>

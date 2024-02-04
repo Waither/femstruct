@@ -25,7 +25,7 @@
 		<div id="carouselBasic" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init data-mdb-pause="false" data-mdb-interval="4000">
 
 			<!-- Indicators -->
-			<div class="carousel-indicators d-none" style="height: calc(90vh - 90px);">
+			<div class="carousel-indicators d-none" style="max-height: calc(100vh - 90px);">
 				<?php
 					$files = scandir($_SERVER['DOCUMENT_ROOT']."/src/images/index");
 					for($i = 0; $i < count($files) - 2;) {
@@ -39,7 +39,7 @@
 			</div>
 
 			<!-- Inner -->
-			<div class="carousel-inner" style="height: calc(100vh - 90px);">
+			<div class="carousel-inner" style="max-height: calc(100vh - 90px);">
 				<?php
 					$i = 0;
 					foreach($files as $file) {
@@ -58,19 +58,7 @@
 					}
 				?>
 			</div>
-			<!-- Inner -->
-
-			<!-- Controls -->
-			<!-- <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasic" data-mdb-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-mdb-target="#carouselBasic" data-mdb-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button> -->
 		</div>
-		<!-- Carousel wrapper -->
 	</div>
 
 	<!-- Load footer -->

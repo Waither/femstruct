@@ -33,7 +33,12 @@
                     <h6 class="text-uppercase fw-bold mb-1"><img src="/src/images/logo/logo<?php if (isset($_COOKIE['MDBstyle']) && $_COOKIE['MDBstyle'] == 'dark') {echo "White"; } else { echo "Black"; } ?>.svg" height="100" alt="Logo"></h6>
                     <p>
                         NIP 7382172412<br>
-                        REGON 527444281
+                        REGON 527444281<br>
+                        Biuro konstrukcyjne:<br>
+                        - Obliczenia i analizy statyczno wytrzymałościowe<br>
+                        - Projekty techniczne i warsztatowe<br>
+                        - Oceny stanu technicznego<br>
+                        - Doradztwo i consulting dla konstruktorów i wykonawców
                     </p>
                 </div>
 
