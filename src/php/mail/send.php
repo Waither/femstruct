@@ -27,23 +27,22 @@
         $mail->AddReplyTo(null);
 
         // Adding emails
-        // $mail->addAddress("biuro@femstruct.pl");
-        $mail->addAddress("maciek550@interia.eu");
+        $mail->addAddress("biuro@femstruct.pl");
+        // $mail->addAddress("maciek550@interia.eu");
         
         // Adding content
         $mail->isHTML(true);
 
         // Get body of mail
         $body = file_get_contents('mail.html');
-        $mail->Subject = "Nowa wiadomość ze strony!";
-        $text = "Nowa wiadomość ze strony FEMstruct<br>Nadawca: $sender<br>Wiadomość: <br> $message";
+        $mail->Subject = "Nowa wiadomość ze strony FEMstruct!";
+        $text = "Nadawca: $sender<br>Wiadomość: <br> $message";
 
         // Replace text
         $body = str_replace('%text%',$text, $body);
-        $mail->AddEmbeddedImage('../../images/logo/logoBlack.svg', 'logoimg');
 
         // Add image and prepared mail
-        $mail->AddEmbeddedImage("D:\Adfors Gorlice\src\images\logo\logo_Adfors.png", 'logoimg');
+        $mail->AddEmbeddedImage('logo.png', 'logoimg');
         $mail->msgHTML($body);
 
         // Sending mail

@@ -33,8 +33,15 @@
 	<script>
 		$(document).ready( function() {
 			document.getElementById("submit").addEventListener('click', (e) => {
+
+				if (document.getElementById("name").value == "" || document.getElementById("mail").value == "" || document.getElementById("message").value == "") {
+					alert("Nie wypełniono formularza!");
+					return;
+				}
 				let myform = document.getElementById("form");
-				let formData = new FormData(formData);
+				let formData = new FormData(myform);
+
+				e.preventDefault();
 
 				$.ajax({
 					url: "/src/php/mail/send.php",
@@ -49,10 +56,15 @@
 					},
 					success: function (response) {
 						document.body.style.cursor = 'auto';
-						$(this).prop("disabled", false);
+						// $("#form").hide();
+						// $("#correct").show();
+						alert("Pomyślnie wysłano mail!");
+						location.reload(true);
 					},
 					error: function() {
 						alert("Błąd wysłania maila!");
+						document.body.style.cursor = 'auto';
+						$(this).prop("disabled", false);
 					}
 				});
 			})
@@ -138,7 +150,7 @@
 						<h2 class="text-center fw-bold mt-3"><?php echo $language["contactForm"]; ?></h2>
 
 						<div class="container pt-2 pb-4">
-							<form class="row g-3" action="" method="POST">
+							<form id="form" class="row g-3">
 
 								<!-- Firstname & lastname -->
 								<div class="col-lg-6 col-md-6">
@@ -166,9 +178,15 @@
 
 								<!-- Send button -->
 								<div class="col-12 d-flex justify-content-center">
-									<button type="submit" class="btn btn-primary" data-mdb-ripple-init><?php echo $language["send"]; ?></button>
+									<button id="submit" type="submit" class="btn btn-primary" data-mdb-ripple-init><?php echo $language["send"]; ?></button>
 								</div>
 							</form>
+
+							<div id="correct" style="display: none;">
+								<div class="bg-success rounded mx-4 py-2 shadow-3-strong">
+									<h4 class="text-center text-light">Pomyśle wysłano wiadomość!</h4>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
