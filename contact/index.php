@@ -56,13 +56,11 @@
 					},
 					success: function (response) {
 						document.body.style.cursor = 'auto';
-						// $("#form").hide();
-						// $("#correct").show();
 						alert("Pomyślnie wysłano mail!");
 						location.reload(true);
 					},
 					error: function() {
-						alert("Błąd wysłania maila!");
+						alert("[Błąd] Nie wysłano maila!");
 						document.body.style.cursor = 'auto';
 						$(this).prop("disabled", false);
 					}
